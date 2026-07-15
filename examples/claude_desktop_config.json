@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "localrag": {
+      "command": "python",
+      "args": ["-m", "localrag.mcp_server"],
+      "env": {
+        "LOCALRAG_INDEX": "/home/you/notes/localrag-index.json",
+        "LOCALRAG_EMBED_URL": "http://localhost:11434/v1",
+        "LOCALRAG_EMBED_MODEL": "nomic-embed-text"
+      }
+    }
+  }
+}

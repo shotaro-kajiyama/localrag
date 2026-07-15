@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "localrag"
+version = "0.1.0"
+description = "Zero-dependency local semantic search over your own files, with an MCP server. Works with any OpenAI-compatible embedding endpoint (Ollama, LM Studio, ...)."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Shotaro Kajiyama" }]
+keywords = ["rag", "semantic-search", "embeddings", "mcp", "ollama", "lm-studio", "local-llm", "vector-search"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Text Processing :: Indexing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/shotaro-kajiyama/localrag"
+
+[project.scripts]
+localrag = "localrag.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/localrag"]
