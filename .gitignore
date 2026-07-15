@@ -6,3 +6,7 @@ dist/
 .venv/
 venv/
 .pytest_cache/
+
+# generated index -- contains absolute paths + document text; never commit
+localrag-index.json
+*.index.json
